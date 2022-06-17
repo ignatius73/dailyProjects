@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right,rgb(191, 200, 173), hsl(43, 37%, 77%) );
+    overflow:hidden;
+
+}
+
+main{
+    width:50%
+}
+
+#todos{
+    position:relative;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: hsl(235, 16%, 39%);
+    height: 30rem;
+    padding-top:2rem;  
+
+}
+
+#form{
+    display:flex;
+    justify-content:center;
+    width:100%;
+    background-color: hsl(235, 16%, 39%);
+    border-radius: 5px;
+}
+
+#form input{
+    width:80%;
+    min-height: 2rem;
+    color:#718F94;
+    max-width:17rem;
+    
+}
+
+#btn{
+    background-image: linear-gradient(to right, #718F94, #90B494);
+    border:none;
+    border-radius: 2px;
+    padding:0.5rem;
+    margin-left:.2rem;
+
+}
+
+#todosList{
+    position:relative;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: hsl(235, 16%, 39%);
+    height: 30rem;
+    padding-top:2rem;  
+}
+
+.todoItem{
+    display:none !important;
+}
+
+.checkable{
+    cursor:pointer;
+}
+
+#states{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:100%;
+}
+
+#states div{
+    display: flex;
+    align-items: center;
+    position:relative;
+    width:33%;
+    min-width:33%;
+    min-height: 2rem;
+    font-size:0.7rem;
+}
+
+#filter-by-status{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    position:relative;
+    width:33%;
+    min-width:33%;
+    
+
+}
+#leftItems, #completes{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color:#90B494;
+}
+
+p{
+    margin:0;
+    padding:0;
+    display: inline;
+    color:#90B494;
+}
+
+.divItem{
+    position: relative;
+    width:90%;
+    border-top:1px solid #DBCFB0;
+    padding:0.5rem;
+    color:#BFC8AD;
+    background: transparent;
+    z-index:100; 
+
+    
+}
+.divItem i{
+    pointer-events: none;
+}
+
+.divItem label{
+    margin-left:5px;
+    display:inline-block;
+    pointer-events: none;
+   
+}
+.divItem label::first-letter{
+    text-transform: capitalize;
+}
+
+
+.completed{
+    text-decoration: line-through;
+}
