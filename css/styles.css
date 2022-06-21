@@ -151,8 +151,7 @@ p{
     color:#BFC8AD;
     background: transparent;
     z-index:100; 
-
-    
+   
 }
 .divItem i{
     pointer-events: none;
@@ -167,7 +166,6 @@ p{
 .divItem label::first-letter{
     text-transform: capitalize;
 }
-
 
 .completed{
     text-decoration: line-through;
@@ -194,8 +192,6 @@ p{
         align-items: center;
         width:100%;
     }
-
-
 } 
 
 @media screen and (min-width: 1024px){
@@ -213,112 +209,9 @@ p{
     }
 
     #states div{
-        /* flex-direction: row; */
         width:33%;
         min-width:33%;
         min-height: 2rem;
        
     }
-
-
 } 
-
-/* @media screen and (min-width:320px) and (max-width: 480px) {
-    body {
-      font-size: 10px;
-      overflow: auto;
-    }
-    main{
-        width:80%;
-        max-width:460px;
-    }
-
-    #todos{
-        flex-direction: column;
-        justify-content: space-between;
-        max-height: 90vh;
-        margin-top:0;
-     }
- 
-     #todosList{
-       max-height: 70vh;
-     }
-
-    #states{
-        flex-direction: column;
-       
-    }
-
-    #states div{
-        width:100%;
-    }
-    #filter-by-status{
-        border:none;
-    }
-    
-  } */
-
-/* @media screen and (min-width: 481px) and (max-width: 768px){
-    body {
-        font-size: 10px;
-        overflow: auto;
-      }
-      main{
-          width:80%;
-          max-width:750px;
-      }
-  
-      #todos{
-         flex-direction: column;
-         justify-content: space-between;
-         max-height: 20rem;
-      }
-  
-      #todosList{
-        max-height: 20rem;
-      }
-     
-  
-      #states div{
-          width:100%;
-      }
-      #filter-by-status{
-          border:none;
-      }
-
-
-} */ 
-
-
-
-/* @media screen and (min-width: 1025px) and (max-width: 1200px){
-    body {
-        font-size: 10px;
-        overflow: auto;
-      }
-      main{
-          width:80%;
-          max-width:750px;
-      }
-  
-      #todos{
-         flex-direction: column;
-         justify-content: space-between;
-         max-height: 20rem;
-      }
-  
-      #todosList{
-        max-height: 20rem;
-      }
-     
-  
-      #states div{
-          width:100%;
-      }
-      #filter-by-status{
-          border:none;
-      }
-
-
-}
- */
